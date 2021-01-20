@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos12detalle.css">
+
+    <script async>
+        function MosOc() {
+            var span = document.getElementById('more');
+            var boton = document.getElementById('mas');
+            kk = span;
+            if (span.style.display === "none") {
+                span.style.display = "inline";
+                boton.innerHTML = "Ocultar.   ";
+            } else if (span.style.display === "inline") {
+                span.style.display = "none";
+                boton.innerHTML = "Leer más.";
+            }
+        }
+    </script>
+
+</head>
+<header>
+    <h1 class="font-effect-3d">Casas Rurales</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#">Lorem</a></li>
+        <li><a href="#">Ipsum</a></li>
+        <li><a href="#">Irboin</a></li>
+        <li><a href="#">Dolor</a></li>
+        <li><a href="#">Aurum</a></li>
+    </ul>
+</nav>
+
+<a name="top"></a>
+
+<body>
+    <div id="cont">
+        <main>
+            <h2>Cerro tulipan.</h2>
+            <p><strong>Habitaciones:</strong> 6 </p>
+            <img src="img/casa1.jpg">
+            <p><strong>Precio:</strong> 150€/Noche </p>
+            <p><strong>Baños:</strong> 2</p>
+            <p><strong>Ubicacion:</strong> Cerros de Uveda.</p>
+            <p><strong>Descripción:</strong>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum leo sit amet nisl condimentum, ut
+                ultrices nibh dapibus. <span id="more">In nec varius augue. Donec commodo lectus a nisi pulvinar, sit
+                    amet
+                    molestie mauris
+                    venenatis. Morbi pretium pulvinar ante, quis rutrum purus fermentum in. In non risus libero. Morbi
+                    mollis
+                    condimentum viverra. Aenean commodo cursus sem, eu porttitor nisl ultricies ac. Lorem ipsum dolor
+                    sit
+                    amet,
+                    consectetur adipiscing elit.</span> <button id="mas">Leer más.</button> </p>
+            <h2>Fotos</h2>
+            <section id="Fotos">
+
+                <img src="img/casa1.jpg" alt="Casa de campo" loading="lazy">
+                <img src="img/casa1.jpg" alt="Casa de campo" loading="lazy">
+                <img src="img/casa1.jpg" alt="Casa de campo" loading="lazy">
+                <img src="img/casa1.jpg" alt="Casa de campo" loading="lazy">
+                <img src="img/casa1.jpg" alt="Casa de campo" loading="lazy">
+                <img src="img/casa1.jpg" alt="Casa de campo" loading="lazy">
+                <img src="img/casa1.jpg" alt="Casa de campo" loading="lazy">
+                <img src="img/casa1.jpg" alt="Casa de campo" loading="lazy">
+                <img src="img/casa1.jpg" alt="Casa de campo" loading="lazy">
+            </section>
+            <p id="flecha"><b> &#8644; </b></p>
+        </main>
+        <aside>
+            <form action="">
+                <h2>Formulario de Reserva</h2>
+                <label>Nombre <input type="text" name="Nombre" placeholder="Nombre" pattern="^(\w+\s?\w*\s?)+\w$"
+                        required></label>
+                <label>Apellido<input type="text" name="Apellidos" placeholder="Apellidos" pattern="^(\w+\s?\w*\s?)+\w$"
+                        required></label>
+                <label>Email <input type="email" name="Correo" placeholder="Correo Electrónico" required></label>
+                <label>Telefono <input type="tel" name="Teléfono" placeholder="Teléfono" id="" required></label>
+                <label>Fecha de entrada <input type="date" required> </label>
+                <label>Fecha de salida <input type="date" required></label>
+                <label>Numero de personas <input type="number" required></label>
+                <input class="input" type="submit" value="Enviar">
+
+            </form>
+        </aside>
+    </div>
+    <footer>
+        <a href="#top"><button>Arriba</button></a>
+        <a href="###"><img src="img/twIcon.webp" alt="Icono twitter"></a>
+        <a href="###"><img src="img/github+icon.png" alt="Icono github"></a>
+        <a href="###"><img src="img/Facebookicono.jpg" alt="Icono Facebook"></a>
+        <a href="###"><img src="img/600px-Instagram_icon.png" alt="Icono Instagram"></a>
+    </footer>
+</body>
+
+</html>

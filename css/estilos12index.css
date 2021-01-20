@@ -1,0 +1,82 @@
+/* Estilos generales */
+@import "https://fonts.googleapis.com/css?family=Roboto&effect=3d";
+body{
+  font-family: Roboto;
+  background-color: lightskyblue;
+  font-size:1.25em ;
+  margin:0;
+  color:rgb(31, 53, 77);
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+canvas{
+  width: 50%;
+  margin-inline: 16%;
+}
+
+/* Estilos cabecera */
+h1 {
+  margin: 40px 0;
+  text-align: center;
+  font-size: 1.65em;
+}
+
+header{
+  padding-block-start: 0.67em;
+  padding-block-end: 0.67em;
+  background-image: url("../img/fondo3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border-color:gainsboro;
+  border-style: inset;
+}
+
+@media only screen and (min-width:600px) {
+  /* Para tablets y dispositivos medianos: */
+ header{
+   background-repeat: repeat-x;
+   background-size:auto 100% ;
+ }
+ h1{
+  font-size: 2em;
+ }
+}
+@media only screen and (min-width: 1100px) {
+  /* Para dispositivos grandes: */
+ header{
+   background-repeat: repeat-x;
+   background-size:auto 100% ;
+   width: 65%;
+   margin-inline-start:17.5%;
+   margin-block: 1.5%;
+  }
+  h1{
+    font-size: 3.5em;
+  }
+}
+
+button{
+    font-size: 1em;
+    margin-inline-start: 35%;
+    width: 30%;
+    height: 10%;
+    margin-block: 10%;
+}
+
+@media only screen and (min-width:600px) {
+  button{
+    font-size: 1.5em;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  /* Para dispositivos grandes: */
+ button{
+  font-size: 2em;
+  margin-inline-start: 37.5%;
+  width: 25%;
+
+ }
+}

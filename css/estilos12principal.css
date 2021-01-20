@@ -1,0 +1,200 @@
+/* Estilos generales */
+@import "https://fonts.googleapis.com/css?family=Roboto&effect=3d";
+body{
+  font-family: Roboto;
+  background-color: lightskyblue;
+  font-size:1.25em ;
+  margin:0;
+  color:rgb(31, 53, 77);
+}
+
+a{
+  text-decoration: none;
+}
+
+h1 {
+  margin: 40px 0;
+  text-align: center;
+  font-size: 1.65em;
+}
+header{
+  padding-block-start: 0.67em;
+  padding-block-end: 0.67em;
+  background-image: url("../img/fondo3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border-color:gainsboro;
+  border-style: inset;
+}
+
+/* Cabecera Responsive */
+@media only screen and (min-width:600px) {
+  /* Para tablets y dispositivos medianos: */
+ header{
+   background-repeat: repeat-x;
+   background-size:auto 100% ;
+ }
+ h1{
+  font-size: 2em;
+ }
+}
+@media only screen and (min-width: 1100px) {
+  /* Para dispositivos grandes: */
+ header{
+   background-repeat: repeat-x;
+   background-size:auto 100% ;
+   width: 65%;
+   margin-inline-start:17.5%;
+   margin-block: 1.5%;
+  }
+  h1{
+    font-size: 3.5em;
+  }
+}
+
+/* Nav */
+nav{
+  background-color: rgb(60, 89, 100);
+}
+nav>ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding-block: 1%;
+  padding-inline: 5%;
+  margin-block:5% 0%;
+}
+nav>ul>li{
+  display: inline;
+  justify-self: center;
+  font-size: 0.7em;
+  padding-inline: 1%;
+   margin-inline: 1%;
+}
+nav>ul>li>a{
+  color: aliceblue;
+}
+
+/* Nav responsive */
+@media only screen and (min-width:600px) {
+  nav>ul{
+    padding-block: 1.5%;
+    margin-block:3%;
+  }
+
+  nav>ul>li{
+    display: inline;
+    font-size: 1em;
+    justify-self: center;
+  }
+}
+@media only screen and (min-width:1100px) {
+  nav>ul>li{
+    font-size: 1.5em;
+  }
+}
+/* Estilos del main y articulos. */
+
+main{
+  margin-inline: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+article{
+  display: block;
+  margin-block: 5%;
+  border: 5px lightblue  outset;
+  background-color: lightsteelblue;
+  padding: 5%;
+  
+}
+
+article>h2{
+  margin-block: 5%;
+}
+article>*:not(a){
+  color:rgb(31, 53, 77);
+}
+
+article>a>button{
+  display: block;
+  font-size: 1em;
+  margin-block: 5%  ;
+}
+
+article>img{
+  width: 90%;
+  margin-inline: 5%;
+}
+
+/* Main responsive */
+@media only screen and (min-width:600px) {
+  /* Para tablets y dispositivos medianos: */
+ main{
+   display: grid;
+   grid-template-columns: auto auto;
+   margin-inline: 2.5%;
+  
+ }
+ article{
+  margin-block: 2.5%;
+   display: inline;
+   flex:1;
+   margin-inline:1% ;
+   padding: 1.5%;
+
+ }
+}
+@media only screen and (min-width: 1100px) {
+  /* Para dispositivos grandes: */
+  main{
+    margin: 1.5%;
+    grid-template-columns: auto auto auto;
+    column-gap: 2.3%;
+   }
+   article{
+     margin-block:4.5% ;
+   }
+   
+}
+
+
+/* Estilos del footer */
+footer{
+  padding: 5%;
+  margin-block-start: 5%;
+  background-color: rgb(91, 147, 170);
+}
+footer>a>button{
+  display: block;
+  margin-block-end: 5%;
+  font-size: 1em;
+}
+
+a>img{
+  width: 15vw;
+}
+/* Footer responsive */
+@media only screen and (min-width:600px) {
+  /* Para tablets y dispositivos medianos: */
+ main{
+   flex-direction: row;
+   flex-flow: wrap;
+ }
+ article{
+   display: inline;
+   flex:1;
+   margin-inline:1% ;
+ }
+ a>img{
+  width: 8vw;
+}
+}
+@media only screen and (min-width: 1100px) {
+  /* Para dispositivos grandes: */
+  a>img{
+    width: 4vw;
+  }
+}
